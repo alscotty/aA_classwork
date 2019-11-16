@@ -1,0 +1,12 @@
+/* PUT FLUID GRID CODE HERE */
+aside {
+    width: 20%;
+    margin-right: 15px;
+    display: inline-block;
+}
+
+section {
+    width: 60%;
+    display: inline-block;
+    vertical-align: top;
+}
