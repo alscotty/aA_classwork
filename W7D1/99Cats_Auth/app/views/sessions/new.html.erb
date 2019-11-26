@@ -1,0 +1,14 @@
+<h1>Log In!!</h1>
+<br><br>
+<form action="/session" method="POST">
+<%# add token check %>
+
+  <label >Username:
+    <input type="text" name = "user[username]">
+  </label>
+  <label >Password:
+    <input type="password" name = "user[password]">
+  </label>
+  <br>
+  <input type="submit" value="Log in">
+</form>
