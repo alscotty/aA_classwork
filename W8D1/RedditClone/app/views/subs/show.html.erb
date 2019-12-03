@@ -1,0 +1,41 @@
+  <h1>Your Sub...?</h1>
+  
+ <b>Nonsubreddit:  <%= @sub.title %></b>
+ <br>
+<%= @sub.description %>
+<br>
+<%= @sub.moderator.username %>
+<br>
+<% @sub.posts.each do |post| %>
+<b>
+  Title:<%= post.title %>
+  </b>
+  <br>
+  Url:<%= post.url %>
+  <br>
+  Content:<%= post.content %>
+  <br>
+  <a href="<%=edit_post_url(post)%>">Edit Post</a>
+<br>
+<% end %>
+
+<form action="<%=sub_posts_url(@sub)%>" method='post'>
+<input type="hidden" name="authenticity_token" value="<%=form_authenticity_token%>">
+
+<label>Title
+<input type="text" name='post[title]'>
+</label>
+<br>
+
+<label>Url
+<input type="text" name='post[url]'>
+</label>
+<br>
+
+<label>Content
+<input type="text" name='post[content]'>
+</label>
+<br>
+
+<input type="submit" value='Add Post'>
+</form>

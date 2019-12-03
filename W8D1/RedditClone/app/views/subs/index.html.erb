@@ -1,0 +1,13 @@
+<h1>Subs!!!</h1>
+<ul>
+<% @subs.each do |sub| %>
+  <li> <b><%= sub.title.upcase %> </b>
+  <br>
+ <%= sub.description %> 
+ <br>Created by:
+  <%= sub.moderator.username %> </li>
+  <a href="<%=edit_sub_url(sub)%>">Edit sub</a>
+  <br>
+  <a href="<%=sub_url(sub)%>">View full nonsubreddit</a>
+<% end %>
+</ul>
