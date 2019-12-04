@@ -1,0 +1,14 @@
+.section{
+  display:flex;
+  flex-direction:row;
+  justify-content: space-evenly;
+  list-style: none;
+}
+
+.section > a:nth-child(11):hover{
+  text-decoration: underline;
+}
+.section > a:nth-child(-n+10):hover{
+  // text-decoration: underline;
+  background-color: $light-gray;
+}
