@@ -1,0 +1,20 @@
+.clock {
+  font-family: fantasy;
+  border:2px solid black;
+  border-radius: 5%; 
+  color:white;
+  background-color: orange;
+  font-weight: bold;
+  padding: 10px;
+}
+.tabs-button {
+  font-size: medium;
+}
+.tabs {
+  margin: 10px;
+  width: 200px;
+  height: 200px;
+  border: 1px solid black;
+  background-color: rgb(87, 165, 165);
+}
+
