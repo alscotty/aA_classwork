@@ -1,0 +1,23 @@
+#tile{
+    background: cyan;
+    display:flex;
+    border: 1px solid black;
+    border-style: inset;
+    /* border-style: outset; */
+    width:10%;
+}
+body{
+    display:flex;
+}
+
+.bombed{
+
+}
+
+.explored{
+
+}
+
+.flagged{
+    
+}
