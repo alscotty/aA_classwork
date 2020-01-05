@@ -4,9 +4,10 @@ import {logout} from '../actions/session_actions'
 
 const mSTP = ({ session, entities: { users } }) => {
     return {
-        currentUser: users[session.id]
+        currentUser: session.currentUser
     };
 };
+// users[session.id]
 
 
 const mDTP=dispatch=>({

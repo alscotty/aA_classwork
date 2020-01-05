@@ -281,9 +281,10 @@ var mSTP = function mSTP(_ref) {
   var session = _ref.session,
       users = _ref.entities.users;
   return {
-    currentUser: users[session.id]
+    currentUser: session.currentUser
   };
-};
+}; // users[session.id]
+
 
 var mDTP = function mDTP(dispatch) {
   return {
@@ -797,7 +798,7 @@ var Auth = function Auth(_ref) {
 
 var mapStateToProps = function mapStateToProps(state) {
   return {
-    loggedIn: Boolean(state.session.id)
+    loggedIn: Boolean(state.session.currentUser)
   };
 };
 
